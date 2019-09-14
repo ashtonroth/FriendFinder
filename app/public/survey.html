@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Friend Finder Pro</title>
+
+	    <!------- Bootstrap HTML/CSS ---------->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!------------- JQuery ---------------->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!------------- Bootstrap Script -------------->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<!-- Including Font Awesome Icons -->
+	<script src="https://use.fontawesome.com/b38c8ed4c7.js"></script>
+
+	<!-- Link to reset stylesheet -->
+	<link rel="stylesheet" href="css/reset.css">
+
+	<!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Compiled and minified Materialize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+          
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+		<nav>
+			<div class="nav-wrapper green accent-2">
+				<a href="/" class="brand-logo" id="logo">Friend Finder</a>
+				<ul class="right hide-on-med-and-down" id="head-nav-links">
+					<li><a href="/survey">Survey</a></li>
+					<li><a href="/api/friends">API Friends List</a></li>
+					<li><a href="https://github.com/ashtonroth/friendfinder">GitHub Repo</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+    </nav>
+    <div class="container mt-3 justify-content-center">
+        <div class="jumbotron bg-primary text-white">
+            <h1 class="display-3">Friend Finder</h1>
+            <p>Get started by telling us more about yourself!</p>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="display-5">Personal Info</h1>
+        <hr class="my-2">
+        <div class="input-group my-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">Name:</span>
+            </div>
+            <input type="text" class="form-control" aria-describedby="basic-addon1" id="name" required>
+        </div>
+        
+        <h1 class="display-5 mt-5">True Love Survey</h1>
+        <h5 class="lead">Please choose 1 (Strongly Disagree) through 5 (Strongly Agree).</h5>
+        <hr class="my-2">
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q1">Morning people are the best people</label>
+            <select class="form-control" id="q1">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3" selected>3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q2">You love to netflix and chill</label>
+            <select class="form-control" id="q2">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3" selected>3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q3">You are committed to a better sense of self</label>
+            <select class="form-control" id="q3">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3" selected>3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q4">You like to start trouble</label>
+            <select class="form-control" id="q4">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3" selected>3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q5">You hate not being the best at something</label>
+            <select class="form-control" id="q5">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3" selected>3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q6">You unabashedly love Diet Coke</label>
+            <select class="form-control" id="q6">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3" selected>3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q7">Brunch is the best meal of the day</label>
+            <select class="form-control" id="q7">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3" selected>3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q8">Guns are chill</label>
+            <select class="form-control" id="q8">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3" selected>3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q9">Helping others feeds my soul</label>
+            <select class="form-control" id="q9">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3" selected>3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <label class="input-group-text col-8" for="q10">Astrology is informative and real</label>
+            <select class="form-control" id="q10">
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2 (Disagree)</option>
+                <option value="3" selected>3 (Neutral)</option>
+                <option value="4">4 (Agree)</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary " id="submit">Submit</button>
+        <hr class="mt-5 mb-3">
+    </div>
+    <!-------------- Error Model --------------->
+    <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModal" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Please fill in all blanks.</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--------------- Results Modal ----------------->
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Your new best friend!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="modalContent"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            var username = $("#name").val().trim();
+            var photoURL = $("#photoLink").val().trim();
+            if (username.length > 0 && photoURL.length > 0) {
+                var user = {
+                    name: username,
+                    photoURL: photoURL,
+                    scores: [
+                        parseInt($("#q1").val()),
+                        parseInt($("#q2").val()),
+                        parseInt($("#q3").val()),
+                        parseInt($("#q4").val()),
+                        parseInt($("#q5").val()),
+                        parseInt($("#q6").val()),
+                        parseInt($("#q7").val()),
+                        parseInt($("#q8").val()),
+                        parseInt($("#q9").val()),
+                        parseInt($("#q10").val()),
+                    ]
+                }
+                $.post("/api/friends", user)
+                    .then(function (newBestFriend) {
+                        if (newBestFriend) {
+                            //Empty out the modal
+                            $("#modalContent").empty();
+                            $("#name").val('');
+                            $("#photoLink").val('');
+                            //Grabbing name and photo URL for each object
+                            newBestFriend.forEach(function (profile) {
+                                var profileDiv = $('<div class="profile">');
+                                var name = profile.name;
+                                var photoURL = profile.photoURL;
+                                var profileHeader = $('<h3>').text(name);
+                                var photo = $('<img>').attr('src', photoURL);
+                                photo.css("width", "100%")
+                                profileDiv.append(profileHeader, photo);
+                                $('#modalContent').append(profileDiv);
+                            });
+                            $('#resultModal').modal('toggle');
+                        }
+                    })
+            } else {
+                $("#errorModal").modal("toggle");
+                setTimeout(function () {
+                    $("#errorModal").modal("toggle");
+                }, 3000);
+            }
+        })
+    </script>
+
+</body>
+
+</html>

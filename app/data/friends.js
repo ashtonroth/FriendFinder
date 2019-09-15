@@ -1,8 +1,8 @@
 // Data structure that will store the friends data
 var friendsArray = [
 	{
-		name: 'Scooter',
-		photo: 'http://cdn3-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-15.jpg',
+		name: 'Scooby Doo',
+		photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPQIKI7bnLoYgvZvE0TGFHdRsoyvnOQTMtBmSoaHkUSNz4LLOhUQ',
 		scores: [
 			'1',
 			'5',
@@ -17,8 +17,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: 'Fluffy',
-		photo: 'https://i.ytimg.com/vi/mRf3-JkwqfU/hqdefault.jpg',
+		name: 'Patrick Star',
+		photo: 'https://images-na.ssl-images-amazon.com/images/I/41isOEwa4PL._SY450_.jpg',
 		scores: [
 			'2',
 			'4',
@@ -33,8 +33,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: 'Spencer',
-		photo: 'http://cdn3-www.cattime.com/assets/uploads/2011/08/best-kitten-names-1.jpg',
+		name: "Catdog",
+		photo: 'https://upload.wikimedia.org/wikipedia/en/thumb/6/64/CatDog.jpeg/250px-CatDog.jpeg',
 		scores: [
 			'4',
 			'3',
@@ -49,8 +49,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: 'Zackariah',
-		photo: 'https://pbs.twimg.com/profile_images/562466745340817408/_nIu8KHX.jpeg',
+		name:"Tommy from Rugrats" , 
+		photo: 'https://vignette.wikia.nocookie.net/rugrats/images/e/e4/Tommy_Pickles.png/revision/latest?cb=20180820145552',
 		scores: [
 			'5',
 			'1',
@@ -65,8 +65,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: 'Cloe',
-		photo: 'http://4.bp.blogspot.com/-HTvSYzA-pO4/UgQb4Zh_u0I/AAAAAAAAEuI/XwhtogT_1tA/s1600/3+cute2.jpg',
+		name: 'The Grinch',
+		photo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkj-mnotLPWqRrKGQXWJMaT3jg3zQsYToFoUTVXqPY89hoZb59',
 		scores: [
 			'1',
 			'1',
@@ -97,8 +97,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: 'Beyonce Knowles',
-		photo: 'http://www.billboard.com/files/styles/article_main_image/public/media/beyonce-feb-2014-billboard-650.jpg',
+		name: 'Barney',
+		photo: 'https://ddbuckingham.files.wordpress.com/2018/06/barney.jpg?w=481&h=320',
 		scores: [
 			'5',
 			'4',
@@ -113,8 +113,8 @@ var friendsArray = [
 		]
 	},
 	{
-		name: 'Adele Adkins',
-		photo: 'https://i1.imgiz.com/data/videoshots/6829/6829475-6461.jpg',
+		name: 'Oscar the Grouch',
+		photo: 'https://ids.si.edu/ids/viewTile/A/118/1180cf0c7476e33b49efd460bf65fb88_files/10/1_0.jpg',
 		scores: [
 			'5',
 			'2',

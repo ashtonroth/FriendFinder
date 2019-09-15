@@ -1,8 +1,8 @@
-var friendArray = require("../app/data/friends");
+var friendsArray = require("../data/friends");
 
 module.exports = function (app) {
     app.get("/api/friends", function (req, res) {
-        res.json(friendArray);
+        res.json(friendsArray);
     })
 
     app.post("/api/friends", function (req, res) {
@@ -13,16 +13,16 @@ module.exports = function (app) {
         var differences = [];
 
         //Search friend array
-        friendArray.forEach(function (friend) {
-            var userComparison = 0;
+        friendsArray.forEach(function (friend) {
+            var userComp = 0;
 
             for (var i = 0; i < user.scores.length; i++) {
                 var userScore = user.scores[i];
                 var friendScore = friend.scores[i];
                 var difference = friendScore - userScore;
-                userComparison += Math.abs(difference);
+                userComp += Math.abs(difference);
             }
-            differences.push(userComparison);
+            differences.push(userComp);
 
         });
             var minimumDifference = Math.min.apply(null, differences);
@@ -31,10 +31,10 @@ module.exports = function (app) {
 
             for (var i = 0; i < differences.length; i++) {
                 if (differences[i] === minimumDifference) {
-                    trueLove.push(friendArray[i]);
+                    trueLove.push(friendsArray[i]);
                 }
             }
             res.json(trueLove);
-            friendArray.push(user)
+            friendsArray.push(user)
     })
 }
